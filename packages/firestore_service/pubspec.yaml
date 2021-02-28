@@ -8,8 +8,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  built_collection: ^4.3.2
-  cloud_firestore: ^0.14.0+1
+  built_collection: ^5.0.0
+  cloud_firestore: ^1.0.0
 
 dev_dependencies:
   flutter_test:
