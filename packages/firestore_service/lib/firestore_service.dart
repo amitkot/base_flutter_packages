@@ -1,5 +1,6 @@
 library firestore_service;
 
+import 'package:built_collection/built_collection.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
@@ -23,7 +24,7 @@ class FirestoreService {
     await reference.delete();
   }
 
-  Stream<List<T>> collectionStream<T>({
+  Stream<BuiltList<T>> collectionStream<T>({
     required String path,
     required T Function(Map<String, dynamic> data, String documentID) builder,
     Query Function(Query query)? queryBuilder,
@@ -42,7 +43,7 @@ class FirestoreService {
       if (sort != null) {
         result.sort(sort);
       }
-      return result;
+      return result.build();
     });
   }
 
