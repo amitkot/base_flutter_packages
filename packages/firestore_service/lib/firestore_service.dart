@@ -2,7 +2,6 @@ library firestore_service;
 
 import 'package:built_collection/built_collection.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart';
 
 class FirestoreService {
   FirestoreService._();
@@ -26,7 +25,7 @@ class FirestoreService {
 
   Stream<BuiltList<T>> collectionStream<T>({
     required String path,
-    required T Function(Map<String, dynamic> data, String documentID) builder,
+    required T Function(Map<String, dynamic>? data, String documentID) builder,
     Query Function(Query query)? queryBuilder,
     int Function(T lhs, T rhs)? sort,
   }) {
@@ -49,7 +48,7 @@ class FirestoreService {
 
   Stream<T> documentStream<T>({
     required String path,
-    required T Function(Map<String, dynamic> data, String documentID) builder,
+    required T Function(Map<String, dynamic>? data, String documentID) builder,
   }) {
     final DocumentReference reference = FirebaseFirestore.instance.doc(path);
     final Stream<DocumentSnapshot> snapshots = reference.snapshots();
