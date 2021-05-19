@@ -10,12 +10,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  amitkot_analysis:
+    git:
+      url: https://github.com/amitkot/amitkot_analysis.git
   firebase_auth_service:
     #path: ../firebase_auth_service
     git:
-      url: https://github.com/bizz84/codewithandrea_flutter_packages
+      url: https://github.com/amitkot/base_flutter_packages
       path: packages/firebase_auth_service
-  google_sign_in: ^4.5.1
+  google_sign_in: ^5.0.3
 
 dev_dependencies:
   flutter_test:

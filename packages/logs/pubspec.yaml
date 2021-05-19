@@ -1,19 +1,22 @@
-name: alert_dialogs
-description: Helper methods for showing alert dialogs
-version: 0.2.0
-author: Andrea Bizzotto
-homepage: https://www.codewithandrea.com
+name: logs
+description: A new Flutter package project.
+version: 0.0.1
+publish_to: none
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
+
   amitkot_analysis:
     git:
       url: https://github.com/amitkot/amitkot_analysis.git
-  firebase_core: ^1.2.0
+
+  intl: ^0.17.0
+  built_collection: ^5.0.0
+  logging: ^1.0.1
 
 dev_dependencies:
   flutter_test:

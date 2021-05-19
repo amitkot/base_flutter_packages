@@ -10,6 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  amitkot_analysis:
+    git:
+      url: https://github.com/amitkot/amitkot_analysis.git
 
 dev_dependencies:
   flutter_test:

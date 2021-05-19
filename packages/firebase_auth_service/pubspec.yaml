@@ -10,9 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^0.5.0
-  firebase_auth: ^0.18.0
-  meta: ^1.1.8
+  amitkot_analysis:
+    git:
+      url: https://github.com/amitkot/amitkot_analysis.git
+  firebase_core: ^1.2.0
+  firebase_auth: ^1.2.0
+  meta: ^1.3.0
 
 dev_dependencies:
   flutter_test:

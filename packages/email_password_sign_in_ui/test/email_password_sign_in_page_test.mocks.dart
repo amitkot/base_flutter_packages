@@ -48,10 +48,10 @@ class MockFirebaseAuth extends _i1.Mock implements _i4.FirebaseAuth {
       (super.noSuchMethod(Invocation.getter(#pluginConstants),
           returnValue: <dynamic, dynamic>{}) as Map<dynamic, dynamic>);
   @override
-  _i5.Future<void> applyActionCode(String? code) =>
-      (super.noSuchMethod(Invocation.method(#applyActionCode, [code]),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+  _i5.Future<void> applyActionCode(String? code) => (super.noSuchMethod(
+      Invocation.method(#applyActionCode, [code]),
+      returnValue: Future.value(null),
+      returnValueForMissingStub: Future<dynamic>.value()) as _i5.Future<void>);
   @override
   _i5.Future<_i3.ActionCodeInfo> checkActionCode(String? code) =>
       (super.noSuchMethod(Invocation.method(#checkActionCode, [code]),
@@ -60,10 +60,11 @@ class MockFirebaseAuth extends _i1.Mock implements _i4.FirebaseAuth {
   @override
   _i5.Future<void> confirmPasswordReset({String? code, String? newPassword}) =>
       (super.noSuchMethod(
-          Invocation.method(#confirmPasswordReset, [],
-              {#code: code, #newPassword: newPassword}),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+              Invocation.method(#confirmPasswordReset, [],
+                  {#code: code, #newPassword: newPassword}),
+              returnValue: Future.value(null),
+              returnValueForMissingStub: Future<dynamic>.value())
+          as _i5.Future<void>);
   @override
   _i5.Future<_i4.UserCredential> createUserWithEmailAndPassword(
           {String? email, String? password}) =>
@@ -101,39 +102,43 @@ class MockFirebaseAuth extends _i1.Mock implements _i4.FirebaseAuth {
   _i5.Future<void> sendPasswordResetEmail(
           {String? email, _i6.ActionCodeSettings? actionCodeSettings}) =>
       (super.noSuchMethod(
-          Invocation.method(#sendPasswordResetEmail, [],
-              {#email: email, #actionCodeSettings: actionCodeSettings}),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+              Invocation.method(#sendPasswordResetEmail, [],
+                  {#email: email, #actionCodeSettings: actionCodeSettings}),
+              returnValue: Future.value(null),
+              returnValueForMissingStub: Future<dynamic>.value())
+          as _i5.Future<void>);
   @override
   _i5.Future<void> sendSignInLinkToEmail(
           {String? email, _i6.ActionCodeSettings? actionCodeSettings}) =>
       (super.noSuchMethod(
-          Invocation.method(#sendSignInLinkToEmail, [],
-              {#email: email, #actionCodeSettings: actionCodeSettings}),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+              Invocation.method(#sendSignInLinkToEmail, [],
+                  {#email: email, #actionCodeSettings: actionCodeSettings}),
+              returnValue: Future.value(null),
+              returnValueForMissingStub: Future<dynamic>.value())
+          as _i5.Future<void>);
   @override
-  _i5.Future<void> setLanguageCode(String? languageCode) =>
-      (super.noSuchMethod(Invocation.method(#setLanguageCode, [languageCode]),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+  _i5.Future<void> setLanguageCode(String? languageCode) => (super.noSuchMethod(
+      Invocation.method(#setLanguageCode, [languageCode]),
+      returnValue: Future.value(null),
+      returnValueForMissingStub: Future<dynamic>.value()) as _i5.Future<void>);
   @override
   _i5.Future<void> setSettings(
           {bool? appVerificationDisabledForTesting, String? userAccessGroup}) =>
       (super.noSuchMethod(
-          Invocation.method(#setSettings, [], {
-            #appVerificationDisabledForTesting:
-                appVerificationDisabledForTesting,
-            #userAccessGroup: userAccessGroup
-          }),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+              Invocation.method(#setSettings, [], {
+                #appVerificationDisabledForTesting:
+                    appVerificationDisabledForTesting,
+                #userAccessGroup: userAccessGroup
+              }),
+              returnValue: Future.value(null),
+              returnValueForMissingStub: Future<dynamic>.value())
+          as _i5.Future<void>);
   @override
   _i5.Future<void> setPersistence(_i7.Persistence? persistence) =>
       (super.noSuchMethod(Invocation.method(#setPersistence, [persistence]),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+              returnValue: Future.value(null),
+              returnValueForMissingStub: Future<dynamic>.value())
+          as _i5.Future<void>);
   @override
   _i5.Future<_i4.UserCredential> signInAnonymously() =>
       (super.noSuchMethod(Invocation.method(#signInAnonymously, []),
@@ -183,13 +188,14 @@ class MockFirebaseAuth extends _i1.Mock implements _i4.FirebaseAuth {
   @override
   _i5.Future<void> signInWithRedirect(_i9.AuthProvider? provider) =>
       (super.noSuchMethod(Invocation.method(#signInWithRedirect, [provider]),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+              returnValue: Future.value(null),
+              returnValueForMissingStub: Future<dynamic>.value())
+          as _i5.Future<void>);
   @override
-  _i5.Future<void> signOut() =>
-      (super.noSuchMethod(Invocation.method(#signOut, []),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+  _i5.Future<void> signOut() => (super.noSuchMethod(
+      Invocation.method(#signOut, []),
+      returnValue: Future.value(null),
+      returnValueForMissingStub: Future<dynamic>.value()) as _i5.Future<void>);
   @override
   _i5.Future<String> verifyPasswordResetCode(String? code) =>
       (super.noSuchMethod(Invocation.method(#verifyPasswordResetCode, [code]),
@@ -205,18 +211,19 @@ class MockFirebaseAuth extends _i1.Mock implements _i4.FirebaseAuth {
           Duration? timeout = const Duration(seconds: 30),
           int? forceResendingToken}) =>
       (super.noSuchMethod(
-          Invocation.method(#verifyPhoneNumber, [], {
-            #phoneNumber: phoneNumber,
-            #verificationCompleted: verificationCompleted,
-            #verificationFailed: verificationFailed,
-            #codeSent: codeSent,
-            #codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
-            #autoRetrievedSmsCodeForTesting: autoRetrievedSmsCodeForTesting,
-            #timeout: timeout,
-            #forceResendingToken: forceResendingToken
-          }),
-          returnValue: Future.value(null),
-          returnValueForMissingStub: Future.value()) as _i5.Future<void>);
+              Invocation.method(#verifyPhoneNumber, [], {
+                #phoneNumber: phoneNumber,
+                #verificationCompleted: verificationCompleted,
+                #verificationFailed: verificationFailed,
+                #codeSent: codeSent,
+                #codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
+                #autoRetrievedSmsCodeForTesting: autoRetrievedSmsCodeForTesting,
+                #timeout: timeout,
+                #forceResendingToken: forceResendingToken
+              }),
+              returnValue: Future.value(null),
+              returnValueForMissingStub: Future<dynamic>.value())
+          as _i5.Future<void>);
   @override
   String toString() =>
       (super.noSuchMethod(Invocation.method(#toString, []), returnValue: '')
