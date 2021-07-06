@@ -14,13 +14,13 @@ dependencies:
   amitkot_analysis:
     git:
       url: https://github.com/amitkot/amitkot_analysis.git
-  firebase_auth: ^1.2.0
+  firebase_auth: ^2.0.0
   provider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  mockito: ^5.0.7
+  mockito: ^5.0.10
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

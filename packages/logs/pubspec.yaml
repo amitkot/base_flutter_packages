@@ -15,7 +15,7 @@ dependencies:
       url: https://github.com/amitkot/amitkot_analysis.git
 
   intl: ^0.17.0
-  built_collection: ^5.0.0
+  built_collection: ^5.1.0
   logging: ^1.0.1
 
 dev_dependencies:

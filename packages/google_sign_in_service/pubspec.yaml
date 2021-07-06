@@ -19,7 +19,7 @@ dependencies:
     git:
       url: https://github.com/amitkot/base_flutter_packages
       path: packages/firebase_auth_service
-  google_sign_in: ^5.0.3
+  google_sign_in: ^5.0.4
 
 dev_dependencies:
   flutter_test:

@@ -3,6 +3,7 @@ description: Wrapper for Cloud Firestore
 version: 0.2.0
 author: Andrea Bizzotto
 homepage: https://www.codewithandrea.com
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -13,8 +14,8 @@ dependencies:
   amitkot_analysis:
     git:
       url: https://github.com/amitkot/amitkot_analysis.git
-  built_collection: ^5.0.0
-  cloud_firestore: ^2.2.0
+  built_collection: ^5.1.0
+  cloud_firestore: ^2.3.0
 
 dev_dependencies:
   flutter_test:
