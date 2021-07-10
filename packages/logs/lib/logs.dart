@@ -57,5 +57,12 @@ class Logs {
   }
 
   String _formatRecordIso8601(LogRecord record) =>
-      '''${record.time.toIso8601String()} [${record.level.name}] ${record.loggerName} -- ${record.message}''';
+      '''${record.time.toIso8601String()} [${record.level.name}] ${record.loggerName} -- ${record.message}${_maybeAdd(record.error)}${_maybeAdd(record.stackTrace)}''';
+
+  String _maybeAdd(Object? part) {
+    if (part == null) {
+      return '';
+    }
+    return '\n${part.toString()}';
+  }
 }
